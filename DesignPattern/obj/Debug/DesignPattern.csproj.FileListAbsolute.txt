@@ -1,0 +1,8 @@
+D:\_Projects\CSharp\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe.config
+D:\_Projects\CSharp\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe
+D:\_Projects\CSharp\DesignPattern\DesignPattern\bin\Debug\DesignPattern.pdb
+D:\_Projects\CSharp\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.AssemblyReference.cache
+D:\_Projects\CSharp\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.SuggestedBindingRedirects.cache
+D:\_Projects\CSharp\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CoreCompileInputs.cache
+D:\_Projects\CSharp\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
+D:\_Projects\CSharp\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb
