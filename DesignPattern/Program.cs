@@ -1,5 +1,7 @@
 ﻿using DesignPattern.ChainofResponsibilityPattern;
+using DesignPattern.InterpreterPattern;
 using DesignPattern.IteratorPatttern;
+using DesignPattern.MediatorPattern;
 using DesignPattern.MementoPattern;
 using DesignPattern.ObserverPattern;
 using DesignPattern.VisitorPattern;
@@ -17,6 +19,8 @@ namespace DesignPattern
             //ObserverHelper();
             //MementoHelper();
             //IteratorHelper();
+            //InterpreterHelper();
+            MediatorHelper();
         }
 
 
@@ -127,8 +131,54 @@ namespace DesignPattern
         }
         #endregion
 
+        #region Pattern - Interpreter
+        static void InterpreterHelper()
+        {
+            Interpreter _root1 = new CheckContentsExistence("Root1");
+            Interpreter _root2 = new CheckContentsExistence("Root1");
+            Interpreter _orExpr1 = new OrExpression(_root1, _root2);
+            Console.WriteLine($"root 存在么：{_orExpr1.Interpret("root")}");
 
+            Console.WriteLine();
 
+            Interpreter _shanshan = new CheckContentsExistence("Shanshan");
+            Interpreter _pig = new CheckContentsExistence("pig");
+            Interpreter _isExpr2 = new AndExpression(_shanshan, _pig);
+            Console.WriteLine($"Shanshan is a little pig? {_isExpr2.Interpret("pig Shanshan")}");
+            Console.ReadLine();
+        }
+        #endregion
 
+        #region Pattern - Mediator
+        static void MediatorHelper()
+        {
+            ConcreteMediator m = new ConcreteMediator();
+
+            //让 具体同事类 认识 中介者对象 
+            ConcreteColleague c1 = new ConcreteColleague("c1", m);
+            ConcreteColleague c2 = new ConcreteColleague("c2", m);
+            ConcreteColleague c3 = new ConcreteColleague("c3", m);
+            ConcreteColleague c4 = new ConcreteColleague("c4", m);
+            
+            //让 中介者 认识各个 具体同事类对象
+            m.AddColleague(c1); 
+            m.AddColleague(c1);
+            m.AddColleague(c2);
+            m.AddColleague(c3);
+            m.AddColleague(c4);
+
+            c1.Send("c1: 大家加班到这么晚，都吃过了吗？");
+            Console.WriteLine();
+            c2.Send("c2: 没有呢，c1你打算请客不?");
+            Console.WriteLine();
+            c3.Send("c3: 什么? c1打算请客么?");
+            Console.WriteLine();
+            c4.Send("c4: 大家AA吧，挣钱都不容易的.");
+            Console.WriteLine();
+            c1.Send("c1: 还是c4好,去吃饭吧。");
+
+            Console.ReadLine();
+        }
+        #endregion
     }
 }

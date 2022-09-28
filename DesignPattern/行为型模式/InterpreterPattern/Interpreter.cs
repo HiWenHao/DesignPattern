@@ -1,24 +1,33 @@
-﻿using System;
-
-namespace DesignPattern.InterpreterPattern
+﻿namespace DesignPattern.InterpreterPattern
 {
-    public interface IExpression
+    /// <summary>
+    /// 解释器接口
+    /// </summary>
+    public interface Interpreter
     {
+        /// <summary>
+        /// 解释器
+        /// </summary>
+        /// <param name="context">具体内容</param>
+        /// <returns></returns>
         bool Interpret(string context);
     }
 
-    public class TerminalExpression : IExpression
+    /// <summary>
+    /// 解释具体内容是否存在该元素中
+    /// </summary>
+    public class CheckContentsExistence : Interpreter
     {
-        private string _data;
+        private string m_data;
 
-        public TerminalExpression(string data)
+        public CheckContentsExistence(string data)
         {
-            this._data = data;
+            this.m_data = data;
         }
 
         public bool Interpret(string context)
         {
-            if (context.Contains(_data))
+            if (context.Contains(m_data))
             {
                 return true;
             }
@@ -26,63 +35,43 @@ namespace DesignPattern.InterpreterPattern
         }
     }
 
-    public class OrExpression : IExpression
+    /// <summary>
+    /// 或运算
+    /// </summary>
+    public class OrExpression : Interpreter
     {
-        private IExpression _expr1 = null;
-        private IExpression _expr2 = null;
+        private Interpreter m_expr1 = null;
+        private Interpreter m_expr2 = null;
 
-        public OrExpression(IExpression expression1, IExpression expression2)
+        public OrExpression(Interpreter expression1, Interpreter expression2)
         {
-            this._expr1 = expression1;
-            this._expr2 = expression2;
+            this.m_expr1 = expression1;
+            this.m_expr2 = expression2;
         }
 
         public bool Interpret(string context)
         {
-            return _expr1.Interpret(context) || _expr2.Interpret(context);
+            return m_expr1.Interpret(context) || m_expr2.Interpret(context);
         }
     }
 
-    public class AndExpression : IExpression
+    /// <summary>
+    /// 和运算
+    /// </summary>
+    public class AndExpression : Interpreter
     {
-        private IExpression _expr1 = null;
-        private IExpression _expr2 = null;
+        private Interpreter m_expr1 = null;
+        private Interpreter m_expr2 = null;
 
-        public AndExpression(IExpression expression1, IExpression expression2)
+        public AndExpression(Interpreter expression1, Interpreter expression2)
         {
-            this._expr1 = expression1;
-            this._expr2 = expression2;
+            this.m_expr1 = expression1;
+            this.m_expr2 = expression2;
         }
 
         public bool Interpret(string context)
         {
-            return _expr1.Interpret(context) && _expr2.Interpret(context);
-        }
-    }
-
-    public class InterpreterPatternDemo
-    {
-        public static IExpression GetMaleExpression()
-        {
-            IExpression robert = new TerminalExpression("Robert");
-            IExpression john = new TerminalExpression("John");
-            return new OrExpression(robert, john);
-        }
-
-        public static IExpression GetMarriedWomanExpression()
-        {
-            IExpression julie = new TerminalExpression("Julie");
-            IExpression married = new TerminalExpression("Married");
-            return new AndExpression(julie, married);
-        }
-
-        public static void Execute()
-        {
-            IExpression isMale = GetMaleExpression();
-            Console.WriteLine($"John is male? {isMale.Interpret("John")}");
-
-            IExpression isMarriedWoman = GetMarriedWomanExpression();
-            Console.WriteLine($"Julie is a married women? {isMarriedWoman.Interpret("Married Julie")}");
+            return m_expr1.Interpret(context) && m_expr2.Interpret(context);
         }
     }
 }
