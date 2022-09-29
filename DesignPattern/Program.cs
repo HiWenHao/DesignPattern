@@ -1,4 +1,5 @@
 ﻿using DesignPattern.ChainofResponsibilityPattern;
+using DesignPattern.CommandPattern;
 using DesignPattern.InterpreterPattern;
 using DesignPattern.IteratorPatttern;
 using DesignPattern.MediatorPattern;
@@ -20,7 +21,8 @@ namespace DesignPattern
             //MementoHelper();
             //IteratorHelper();
             //InterpreterHelper();
-            MediatorHelper();
+            //MediatorHelper();
+            CommandHelper();
         }
 
 
@@ -176,6 +178,20 @@ namespace DesignPattern
             c4.Send("c4: 大家AA吧，挣钱都不容易的.");
             Console.WriteLine();
             c1.Send("c1: 还是c4好,去吃饭吧。");
+
+            Console.ReadLine();
+        }
+        #endregion
+
+        #region Pattern - Command
+        static void CommandHelper()
+        {
+            Invoker _invoker = new Invoker();
+            Receiver _receiver = new Receiver();
+            ICommand _concreteCommand = new ConcreteCommand(_receiver);
+
+            _invoker.SetCommand(_concreteCommand);
+            _invoker.ExecuteCommand();
 
             Console.ReadLine();
         }

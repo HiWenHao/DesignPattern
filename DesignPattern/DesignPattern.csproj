@@ -46,6 +46,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="行为型模式\ChainofResponsibilityPattern\ChainofResponsibilityHandler.cs" />
+    <Compile Include="行为型模式\CommandPattern\Command.cs" />
+    <Compile Include="行为型模式\CommandPattern\ConcreteCommand.cs" />
+    <Compile Include="行为型模式\CommandPattern\Invoker.cs" />
+    <Compile Include="行为型模式\CommandPattern\Receiver.cs" />
     <Compile Include="行为型模式\InterpreterPattern\Interpreter.cs" />
     <Compile Include="行为型模式\IteratorPatttern\Iterator.cs" />
     <Compile Include="行为型模式\IteratorPatttern\NameRepository.cs" />
