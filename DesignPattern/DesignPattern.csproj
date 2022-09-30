@@ -45,6 +45,33 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="创建型模式\AbstractFactoryPattern\AbstractFactory.cs" />
+    <Compile Include="创建型模式\AbstractFactoryPattern\IPhoneProduct.cs" />
+    <Compile Include="创建型模式\AbstractFactoryPattern\IRouterProduct.cs" />
+    <Compile Include="创建型模式\BuilderPattern\Builder.cs" />
+    <Compile Include="创建型模式\BuilderPattern\BuilderDirector.cs" />
+    <Compile Include="创建型模式\BuilderPattern\BuilderProduct.cs" />
+    <Compile Include="创建型模式\BuilderPattern\BuilderWorker.cs" />
+    <Compile Include="创建型模式\FactoryMethodPattern\FactoryMethodModel.cs" />
+    <Compile Include="创建型模式\FactoryMethodPattern\SimpleFactoryMethod.cs" />
+    <Compile Include="创建型模式\PrototypePattern\IProtoType.cs" />
+    <Compile Include="创建型模式\PrototypePattern\ObjectProtoType.cs" />
+    <Compile Include="创建型模式\SingletonPattern\Singleton.cs" />
+    <Compile Include="结构型模式\AdapterPattern\Adapter.cs" />
+    <Compile Include="结构型模式\BridgePattern\Bridge.cs" />
+    <Compile Include="结构型模式\BridgePattern\Goods.cs" />
+    <Compile Include="结构型模式\CompositePattern\TreeLimb.cs" />
+    <Compile Include="结构型模式\CompositePattern\Composite.cs" />
+    <Compile Include="结构型模式\CompositePattern\Leaf.cs" />
+    <Compile Include="结构型模式\DecoratorPattern\Batching.cs" />
+    <Compile Include="结构型模式\DecoratorPattern\Decorator.cs" />
+    <Compile Include="结构型模式\FacadePattern\Facade.cs" />
+    <Compile Include="结构型模式\FacadePattern\FacadeMode.cs" />
+    <Compile Include="结构型模式\FlyweightPattern\FlyWeightLetterMode.cs" />
+    <Compile Include="结构型模式\FlyweightPattern\LetterFlyWeight.cs" />
+    <Compile Include="结构型模式\ProxyPattern\动态代理\DynamicProxy.cs" />
+    <Compile Include="结构型模式\ProxyPattern\IRent.cs" />
+    <Compile Include="结构型模式\ProxyPattern\静态代理\StaticProxy.cs" />
     <Compile Include="行为型模式\ChainofResponsibilityPattern\ChainofResponsibilityHandler.cs" />
     <Compile Include="行为型模式\CommandPattern\Command.cs" />
     <Compile Include="行为型模式\CommandPattern\ConcreteCommand.cs" />
@@ -61,6 +88,9 @@
     <Compile Include="行为型模式\MementoPattern\Originator.cs" />
     <Compile Include="行为型模式\ObserverPattern\Observer.cs" />
     <Compile Include="行为型模式\ObserverPattern\Subject.cs" />
+    <Compile Include="行为型模式\StatePattern\State.cs" />
+    <Compile Include="行为型模式\StrategyPattern\Strategy.cs" />
+    <Compile Include="行为型模式\TemplateMethodPattern\TemplateMethod.cs" />
     <Compile Include="行为型模式\VisitorPattern\Cooker.cs" />
     <Compile Include="行为型模式\VisitorPattern\Visitor.cs" />
   </ItemGroup>
