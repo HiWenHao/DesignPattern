@@ -15,7 +15,7 @@
 **11** 种行为型模式。
 
 ## 23种设计模式概括：
-1. **[单例（Singleton）模式](https://github.com/HiWenHao/DesignPattern/blob/master/DesignPattern/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/SingletonPattern)**
+1. ### [单例（Singleton）模式](https://github.com/HiWenHao/DesignPattern/blob/master/DesignPattern/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/SingletonPattern)
 [相关博客](https://blog.csdn.net/Wenhao_China/article/details/126095077)：某个类只能生成一个实例，该类提供了一个全局访问点供外部获取该实例，其拓展是有限多例模式。
 
 2. **[工厂方法（Factory Method）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/FactoryMethodPattern)
@@ -28,9 +28,9 @@
 [相关博客](https://blog.csdn.net/Wenhao_China/article/details/127053021)：将一个复杂对象分解成多个相对简单的部分，然后根据不同需要分别创建它们，最后构建成该复杂对象。
 
 5. **[原型（Prototype）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/PrototypePattern)**
-[相关博客](https://blog.csdn.net/Wenhao_China/article/details/127053021)：将一个对象作为原型，通过对其进行复制而克隆出多个和原型类似的新实例。
+[相关博客](https://blog.csdn.net/Wenhao_China/article/details/127273912)：将一个对象作为原型，通过对其进行复制而克隆出多个和原型类似的新实例。
 
-=======================================================================================================================
+========================================================================
 
 6. **代理（Proxy）模式**：为某对象提供一种代理以控制对该对象的访问。即客户端通过代理间接地访问该对象，从而限制、增强或修改该对象的一些特性。
 
