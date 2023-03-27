@@ -50,40 +50,40 @@
 11. ### [享元（Flyweight）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/FlyweightPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/127897394)运用共享技术来有效地支持大量细粒度对象的复用。
 
-========================================================================
-
-12. **组合（Composite）模式**：   
+12. ### [组合（Composite）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/CompositePattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/127999729)将对象组合成树状层次结构，使用户对单个对象和组合对象具有一致的访问性。
 
-13. **模板方法（TemplateMethod）模式**：   
+========================================================================
+
+13. ### [模板方法（TemplateMethod）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/TemplateMethodPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/127897394)定义一个操作中的算法骨架，而将算法的一些步骤延迟到子类中，使得子类可以不改变该算法结构的情况下重定义该算法的某些特定步骤。
 
-14. **策略（Strategy）模式**：   
+14. ### [策略（Strategy）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/StrategyPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/129323899)定义了一系列算法，并将每个算法封装起来，使它们可以相互替换，且算法的改变不会影响使用算法的客户。
 
-15. **命令（Command）模式**：   
+15. ### [命令（Command）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/CommandPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128774830)将一个请求封装为一个对象，使发出请求的责任和执行请求的责任分割开。
 
-16. **职责链（Chain of Responsibility）模式**：   
+16. ### [职责链（Chain of Responsibility）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/ChainofResponsibilityPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128368787)把请求从链中的一个对象传到下一个对象，直到请求被响应为止。通过这种方式去除对象之间的耦合。
 
-17. **状态（State）模式**：   
+17. ### [状态（State）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/StatePattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128827425)允许一个对象在其内部状态发生改变时改变其行为能力。
 
-18. **观察者（Observer）模式**：   
+18. ### [观察者（Observer）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/ObserverPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128440919)多个对象间存在一对多关系，当一个对象发生改变时，把这种改变通知给其他多个对象，从而影响其他对象的行为。
 
-19. **中介者（Mediator）模式**：   
+19. ### [中介者（Mediator）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/MediatorPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/129516920)定义一个中介对象来简化原有对象之间的交互关系，降低系统中对象间的耦合度，使原有对象之间不必相互了解。
 
-20. **迭代器（Iterator）模式**：   
+20. ### [迭代器（Iterator）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/IteratorPatttern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128701301)提供一种方法来顺序访问聚合对象中的一系列数据，而不暴露聚合对象的内部表示。
 
-21. **访问者（Visitor）模式**：   
+21. ### [访问者（Visitor）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/VisitorPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128214649)在不改变集合元素的前提下，为一个集合中的每个元素提供多种访问方式，即每个元素有多个访问者对象访问。
 
-22. **备忘录（Memento）模式**：   
+22. ### [备忘录（Memento）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/MementoPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128548320)在不破坏封装性的前提下，获取并保存一个对象的内部状态，以便以后恢复它。
 
-23. **解释器（Interpreter）模式**：   
+23. ### [解释器（Interpreter）模式](https://github.com/HiWenHao/DesignPattern/tree/master/DesignPattern/%E8%A1%8C%E4%B8%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/InterpreterPattern)：   
      [相关博客](https://blog.csdn.net/Wenhao_China/article/details/128609496)提供如何定义语言的文法，以及对语言句子的解释方法，即解释器。
